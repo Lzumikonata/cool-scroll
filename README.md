@@ -2,6 +2,8 @@
 灵感来自*rdio-copy*项目,它是模仿*rdio*,我发现它们引入了很多第三方库,比如*jquery*,*skrollr*之类,所以写了一个原生的滑动插件.
 相比之下,它更简单,小巧,敏捷.
 
+###DEMO  
+[demo](http://htmlpreview.github.io/?https://github.com/WittBulter/cool-scroll/blob/master/index.html)
 ###起步
 通过*bower*安装插件:  
 	`bower install cool-scroll --save`
