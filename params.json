@@ -1,0 +1,6 @@
+{
+  "name": "Cool-scroll",
+  "tagline": "cool-scroll",
+  "body": "# cool-scroll\r\n灵感来自*rdio-copy*项目,它是模仿*rdio*,我发现它们引入了很多第三方库,比如*jquery*,*skrollr*之类,所以写了一个原生的滑动插件.\r\n相比之下,它更简单,小巧,敏捷.\r\n\r\n###起步\r\n通过*bower*安装插件:  \r\n\t`bower install cool-scroll --save`\r\n\t    \r\n###配置 \r\n`var cs = new CoolScroll;cs.init(scrollStart,scrollEnd,speed);`  \r\nscrollStart => 字符串,自定义标记开始属性,默认为cool-scroll-start  \r\nscrollEnd => 字符串,自定义标记结束属性,默认为cool-scroll-end  \r\nspeed => 数字,平滑滑动速度,默认6  \r\n\r\n` <img src=\"\"  cool-scroll-start=\"20\" cool-scroll-end=\"80\">`  \r\ncool-scroll-start => 图片滑动开始百分比,默认20   \r\ncool-scroll-start => 图片滑动结束百分比,默认80   \r\n\r\n  \r\n    \r\n   \r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
