@@ -26,7 +26,6 @@
         //滑动触发事件
             scrollEvent = function (v, top) {
                 var _h = (- top + _this.clientHeight ) * 100 / v.h;
-                console.log (_h, v.start, v.end);
                 if (_h > v.start && _h < v.end) {
                     v.node.style.top = _h + '%';
                 }
