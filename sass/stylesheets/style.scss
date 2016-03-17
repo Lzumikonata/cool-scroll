@@ -1,0 +1,10 @@
+@import "bootstrap";
+
+.active {
+  a {
+    color: #006dcc;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

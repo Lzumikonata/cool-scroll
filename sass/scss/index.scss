@@ -1,0 +1,93 @@
+@import "../stylesheets/bootstrap";
+@import "../components/require";
+
+$top-height: 12rem;
+$seesion-height: 50rem;
+
+%box{
+    width: 100%;
+    height: $seesion-height;
+}
+
+main{
+    min-width: 900px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    @extend %auto;
+    @include fontc(1rem,#5C91EA,3.5rem);
+    padding: 0 3rem;
+    background-color: #fff;
+}
+footer{
+    @extend %auto;
+    @include fontc(1.4rem,#5C91EA,10rem);
+    padding: 0 3rem;
+    background-color: #fff;
+}
+
+.banner{
+    @extend %box;
+    background: url("../img/banner1.jpg") no-repeat center;
+}
+session{
+    width: 100%;
+    height: $seesion-height + $top-height;
+    position: relative;
+    background-color: #fff;
+    display: block;
+    .text-box{
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        width: 50%;
+        height: auto;
+        min-height: $top-height + 6rem;
+        background-color: #3B98DD;
+        padding: 4rem 2rem;
+        &.left{
+            left: 0;
+        }
+        &.right{
+            right: 0;
+        }
+    }
+    .author{
+        margin: $top-height / 2 15%;
+    }
+    .img-box{
+        @extend %box;
+        position: absolute;
+        top: $top-height;
+        overflow: hidden;
+        img{
+            @extend %full;
+            @include translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
