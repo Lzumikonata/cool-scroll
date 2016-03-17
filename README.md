@@ -7,17 +7,14 @@
 	`bower install cool-scroll --save`
 	    
 ###配置 
-`var cs = new CoolScroll;  
-	cs.init(scrollStart,scrollEnd,speed);
-`    
+`var cs = new CoolScroll;cs.init(scrollStart,scrollEnd,speed);`  
+scrollStart => 字符串,自定义标记开始属性,默认为cool-scroll-start  
+scrollEnd => 字符串,自定义标记结束属性,默认为cool-scroll-end  
+speed => 数字,平滑滑动速度,默认6  
 
-scrollStart => 字符串,自定义标记开始属性,默认为cool-scroll-start
-scrollEnd => 字符串,自定义标记结束属性,默认为cool-scroll-end
-speed => 数字,平滑滑动速度,默认6
-
-` <img src=""  cool-scroll-start="20" cool-scroll-end="80">`
-cool-scroll-start => 图片滑动开始百分比,默认20 
-cool-scroll-start => 图片滑动结束百分比,默认80 
+` <img src=""  cool-scroll-start="20" cool-scroll-end="80">`  
+cool-scroll-start => 图片滑动开始百分比,默认20   
+cool-scroll-start => 图片滑动结束百分比,默认80   
 
   
     
