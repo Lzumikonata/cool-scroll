@@ -26,6 +26,7 @@
         //滑动触发事件
             scrollEvent = function (v, top) {
                 var _h = (- top + _this.clientHeight ) * 100 / v.h;
+                console.log (_h, v.start, v.end);
                 if (_h > v.start && _h < v.end) {
                     v.node.style.top = _h + '%';
                 }
@@ -74,6 +75,7 @@
                         h: value.height + _this.clientHeight,
                         top: value.getBoundingClientRect().top
                     })
+                    value.style.top = ~~(_start || 20) + '%';
                 })
             },
             init: function (scrollStart,scrollEnd,speed){
